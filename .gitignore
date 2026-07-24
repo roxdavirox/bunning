@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.bun/
+
+# Build artifacts
+zig-out/
+zig-cache/
+*.so
+*.dylib
+*.dll
+*.o
+*.a
+
+# Fuzzing
+findings/
+crashes/
+corpus/**/afl-*
+
+# Debug
+core
+*.core
+*.dmp
+
+# Exploits (sensitive)
+exploits/**/poc-*
+exploits/**/*.bin
+
+# Traces
+traces/
+*.strace
+*.ltrace
+
+# Local config
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
